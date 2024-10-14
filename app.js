@@ -6,7 +6,7 @@ const Blog = require("./model/blog.model.js")
 const addblogRoute = require('./routes/addblog.route.js');
 const cookieParser = require('cookie-parser');
 const app = express();
-const PORT = process.env.PORT ;
+const PORT =  process.env.PORT  || 5000 || 6000 || 7000 ;
 const path = require("path");
 const { checkForAuthenticationCookie } = require('./middlewares/authentication.js');
 
